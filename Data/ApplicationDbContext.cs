@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using FAQWebApp.Models;
 
 namespace FAQWebApp.Data
 {
@@ -9,5 +10,6 @@ namespace FAQWebApp.Data
             : base(options)
         {
         }
+        public DbSet<FAQWebApp.Models.Question>? Question { get; set; }
     }
 }
